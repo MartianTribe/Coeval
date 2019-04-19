@@ -18,6 +18,10 @@
 		F5BC13C72269F64A008CE8B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BC13C52269F64A008CE8B7 /* LaunchScreen.storyboard */; };
 		F5BC13D22269F64A008CE8B7 /* CoevalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC13D12269F64A008CE8B7 /* CoevalTests.swift */; };
 		F5BC13DD2269F64A008CE8B7 /* CoevalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC13DC2269F64A008CE8B7 /* CoevalUITests.swift */; };
+		F5BC13EE2269FFBE008CE8B7 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC13ED2269FFBE008CE8B7 /* AppManager.swift */; };
+		F5BC13F02269FFC9008CE8B7 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC13EF2269FFC9008CE8B7 /* Controller.swift */; };
+		F5BC13F2226A0031008CE8B7 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC13F1226A0031008CE8B7 /* RealmManager.swift */; };
+		F5BC13F5226A0070008CE8B7 /* CoevalUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC13F4226A0070008CE8B7 /* CoevalUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		F5BC13D82269F64A008CE8B7 /* CoevalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoevalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BC13DC2269F64A008CE8B7 /* CoevalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoevalUITests.swift; sourceTree = "<group>"; };
 		F5BC13DE2269F64A008CE8B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5BC13ED2269FFBE008CE8B7 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		F5BC13EF2269FFC9008CE8B7 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		F5BC13F1226A0031008CE8B7 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		F5BC13F4226A0070008CE8B7 /* CoevalUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoevalUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +147,8 @@
 		F5BC13B82269F648008CE8B7 /* Coeval */ = {
 			isa = PBXGroup;
 			children = (
+				F5BC13F3226A005D008CE8B7 /* Objects */,
+				F5BC13EC2269FFAB008CE8B7 /* Resources */,
 				F5BC13B92269F648008CE8B7 /* AppDelegate.swift */,
 				F5BC13BB2269F648008CE8B7 /* ViewController.swift */,
 				F5BC13BD2269F648008CE8B7 /* Main.storyboard */,
@@ -166,6 +176,24 @@
 				F5BC13DE2269F64A008CE8B7 /* Info.plist */,
 			);
 			path = CoevalUITests;
+			sourceTree = "<group>";
+		};
+		F5BC13EC2269FFAB008CE8B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC13ED2269FFBE008CE8B7 /* AppManager.swift */,
+				F5BC13EF2269FFC9008CE8B7 /* Controller.swift */,
+				F5BC13F1226A0031008CE8B7 /* RealmManager.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F5BC13F3226A005D008CE8B7 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F5BC13F4226A0070008CE8B7 /* CoevalUser.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,9 +408,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BC13F02269FFC9008CE8B7 /* Controller.swift in Sources */,
 				F5BC13C22269F648008CE8B7 /* Coeval.xcdatamodeld in Sources */,
+				F5BC13F5226A0070008CE8B7 /* CoevalUser.swift in Sources */,
 				F5BC13BC2269F648008CE8B7 /* ViewController.swift in Sources */,
 				F5BC13BA2269F648008CE8B7 /* AppDelegate.swift in Sources */,
+				F5BC13EE2269FFBE008CE8B7 /* AppManager.swift in Sources */,
+				F5BC13F2226A0031008CE8B7 /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
