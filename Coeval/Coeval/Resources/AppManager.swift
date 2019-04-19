@@ -7,10 +7,22 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct AppManager {
+class AppManager {
     
-    func checkForUser() {
+    //because we have a private initializer this is the only way to create the singleton
+    static let sharedInstance = AppManager()
+    
+    func checkForUsers() -> Bool {
         
+        let rArrUsers = try! Realm().objects(CoevalUser.self)
+        
+        if rArrUsers.count > 0 {
+            return true
+        }
+        
+        return false
+
     }
 }

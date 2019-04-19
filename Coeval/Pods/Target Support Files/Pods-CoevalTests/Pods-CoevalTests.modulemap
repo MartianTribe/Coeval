@@ -1,6 +1,0 @@
-framework module Pods_CoevalTests {
-  umbrella header "Pods-CoevalTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
