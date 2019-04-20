@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+
+class Controller {
+   
+    //because we have a private initializer this is the only way to create the singleton
+    static let sharedInstance = Controller()
+    
+    let alertManager = AlertManager()
+}
+
